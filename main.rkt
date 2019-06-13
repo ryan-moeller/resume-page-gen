@@ -208,7 +208,7 @@
         (p "Over 15 years of programming experience in embedded hardware and
           software, operating system kernel and userland utilities, web
           development, system administration, and data visualization.")
-        (p "Strong language skills, including C, C++, JavaScript, Python, Java,
+        (p "Diverse language skills, including C, C++, JavaScript, Python, Java,
           Rust, Racket (Scheme), Clojure/ClojureScript, Scala, OCaml, Lua, C#,
           F#, Haskell, PureScript, Verilog, (Bourne) Shell, AWK, Erlang/OTP,
           Elixir, Lisp Flavored Erlang (LFE), and more...")
@@ -243,8 +243,8 @@
      (section-container
       `([id ,section])
       `(,(section-heading section description)
-        (p "Currently pursuing a Computer Science major and Math minor at
-          Sonoma State University.")
+        (p "Bachelor of Science in Computer Science and Minor in Mathematics,
+          awarded by Sonoma State University")
         )))
 
    (let ([section ".jobs"]
@@ -253,6 +253,8 @@
       `([id ,section])
       `(,(section-heading section description)
         (ul
+         (li (em "Operating system engineer @ iXsystems (current)"))
+         (li "FreeBSD operating system development intern")
          (li "Freelance web developer and system administrator")
          (li "Graphic designer")
          (li "Developer of live music visualizations")

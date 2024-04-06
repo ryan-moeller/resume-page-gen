@@ -37,7 +37,7 @@
 ;; External Resources
 ;;
 
-(define uikit-version "3.0.0-rc.2")
+(define uikit-version "3.19.1")
 
 (define (cdnjs-href relative)
   (path->string
@@ -59,9 +59,9 @@
   "https://cdn.rawgit.com/tonsky/FiraCode/cf405dd6/distr/fira_code.css")
 
 (define fontawesome-js-src
-  "https://use.fontawesome.com/releases/v5.0.10/js/all.js")
+  (cdnjs-href "ajax/libs/font-awesome/6.5.1/js/all.min.js"))
 (define fontawesome-js-integrity
-  "sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+")
+  "sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==")
 
 
 ;;
@@ -183,21 +183,13 @@
 
    (let ([section ".io"]
          [description "contact info"]
-         [email "fas fa-envelope"]
-         [linkedin "fab fa-linkedin"]
-         [twitter "fab fa-twitter"])
+         [email "fas fa-envelope"])
      (section-container
       `([id ,section])
       (list (section-heading section description)
             (nav-list `([,email
-                         "mailto:ryan@freqlabs.com"
-                         "ryan@freqlabs.com" " by email"]
-                        [,linkedin
-                         "https://linkedin.com/in/ryan-moeller"
-                         " Ryan Moeller" " on LinkedIn"]
-                        [,twitter
-                         "https://twitter.com/freqlabs"
-                         "@freqlabs" " on Twitter"]))
+                         "mailto:ryan-moeller@att.net"
+                         "ryan-moeller@att.net" " by email"]))
             )))
 
    (let ([section ".me"]
@@ -210,32 +202,24 @@
           development, system administration, and data visualization.")
         (p "Diverse language skills, including C, C++, JavaScript, Python, Java,
           Rust, Racket (Scheme), Clojure/ClojureScript, Scala, OCaml, Lua, C#,
-          F#, Haskell, PureScript, Verilog, (Bourne) Shell, AWK, Erlang/OTP,
+          F#, Haskell, PureScript, Verilog, (Bourne/Korn) Shell, AWK, Erlang/OTP,
           Elixir, Lisp Flavored Erlang (LFE), and more...")
-        (p "Specialized experience in functional programming, foreign function
-          interfaces (FFI), and systems programming.")
-        (p "Contributes to open source software projects including the FreeBSD
-          operating system, community patches for the XNU kernel, and many
-          public personal projects.")
+        (p "Specialized experience in systems programming, automated testing,
+          foreign function interfaces (FFI), and functional programming.")
+	(p "Contributes to open source software projects including the FreeBSD
+          operating system, OpenZFS, and public personal projects.")
         )))
 
    (let ([section ".codes"]
          [description "projects"]
-         [gitlab "fab fa-gitlab"]
-         [github "fab fa-github"]
-         [bitbucket "fab fa-bitbucket"])
+         [github "fab fa-github"])
      (section-container
       `([id ,section])
       (list (section-heading section description)
-            (nav-list`([,gitlab
-                        "https://gitlab.com/freqlabs"
-                        "freqlabs" " on GitLab"]
-                       [,github
-                        "https://github.com/freqlabs"
-                        "freqlabs" " on GitHub"]
-                       [,bitbucket
-                        "https://bitbucket.org/freqlabs"
-                        "freqlabs" " on BitBucket"]))
+            (nav-list `([,github
+                         "https://github.com/ryan-moeller"
+                         "ryan-moeller" " on GitHub"]
+			))
             )))
 
    (let ([section ".edu"]
@@ -243,7 +227,7 @@
      (section-container
       `([id ,section])
       `(,(section-heading section description)
-        (p "Bachelor of Science in Computer Science and Minor in Mathematics,
+        (p "Bachelor of Science in Computer Science, Minor in Mathematics,
           awarded by Sonoma State University")
         )))
 
@@ -253,8 +237,8 @@
       `([id ,section])
       `(,(section-heading section description)
         (ul
-         (li (em "Operating system engineer @ iXsystems (current)"))
-         (li "FreeBSD operating system development intern")
+         (li "Operating system engineer @ iXsystems")
+         (li "FreeBSD operating system development intern @ iXsystems")
          (li "Freelance web developer and system administrator")
          (li "Graphic designer")
          (li "Developer of live music visualizations")

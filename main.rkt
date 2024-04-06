@@ -2,7 +2,7 @@
 
 ;; ISC License
 ;;
-;; Copyright (c) 2018, Ryan Moeller
+;; Copyright (c) 2018-2024, Ryan Moeller
 ;;
 ;; Permission to use, copy, modify, and/or distribute this software for any
 ;; purpose with or without fee is hereby granted, provided that the above

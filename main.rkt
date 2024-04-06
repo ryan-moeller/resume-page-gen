@@ -37,7 +37,7 @@
 ;; External Resources
 ;;
 
-(define uikit-version "3.19.1")
+(define uikit-version "3.19.2")
 
 (define (cdnjs-href relative)
   (path->string
@@ -59,9 +59,9 @@
   "https://cdn.rawgit.com/tonsky/FiraCode/cf405dd6/distr/fira_code.css")
 
 (define fontawesome-js-src
-  (cdnjs-href "ajax/libs/font-awesome/6.5.1/js/all.min.js"))
+  (cdnjs-href "ajax/libs/font-awesome/6.5.2/js/all.min.js"))
 (define fontawesome-js-integrity
-  "sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==")
+  "sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==")
 
 
 ;;

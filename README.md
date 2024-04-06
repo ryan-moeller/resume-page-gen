@@ -22,7 +22,7 @@ Usage
 
 First ensure the dependencies are installed:
 ```
-raco pkg install txexpr cssexpr
+raco pkg install txexpr css-expr
 ```
 
 Then run the program:
